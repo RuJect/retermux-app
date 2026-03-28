@@ -66,9 +66,6 @@ public final class TermuxConstants {
     /** Termux Git organization url */
     public static final String TERMUX_GIT_ORGANIZATION_URL = "https://github.com" + "/" + TERMUX_GIT_ORGANIZATION_NAME; // Default: "https://github.com/termux"
 
-    /** F-Droid packages base url */
-    public static final String FDROID_PACKAGES_BASE_URL = "https://f-droid.org/en/packages"; // Default: "https://f-droid.org/en/packages"
-
 
 
 
