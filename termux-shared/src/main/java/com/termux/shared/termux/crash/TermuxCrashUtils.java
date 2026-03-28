@@ -22,7 +22,6 @@ import com.termux.shared.notification.NotificationUtils;
 import com.termux.shared.termux.TermuxConstants;
 import com.termux.shared.termux.TermuxConstants.TERMUX_APP;
 import com.termux.shared.termux.TermuxUtils;
-import com.termux.shared.termux.models.UserAction;
 import com.termux.shared.termux.notification.TermuxNotificationUtils;
 import com.termux.shared.termux.settings.preferences.TermuxAppSharedPreferences;
 import com.termux.shared.termux.settings.preferences.TermuxPreferenceConstants;

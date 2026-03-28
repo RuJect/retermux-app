@@ -11,7 +11,6 @@ import androidx.preference.PreferenceFragmentCompat;
 
 import com.termux.R;
 import com.termux.shared.file.FileUtils;
-import com.termux.app.models.UserAction;
 import com.termux.shared.interact.ShareUtils;
 import com.termux.shared.android.PackageUtils;
 import com.termux.shared.termux.settings.preferences.TermuxAPIAppSharedPreferences;
@@ -119,8 +118,6 @@ public class SettingsActivity extends AppCompatActivity {
                             aboutString.append(TermuxUtils.getAppInfoMarkdownString(context, TermuxUtils.AppInfoMode.TERMUX_AND_PLUGIN_PACKAGES));
                             aboutString.append("\n\n").append(AndroidUtils.getDeviceInfoMarkdownString(context, true));
                             aboutString.append("\n\n").append(TermuxUtils.getImportantLinksMarkdownString(context));
-
-                            String userActionName = UserAction.ABOUT.getName();
                         }
                     }.start();
 

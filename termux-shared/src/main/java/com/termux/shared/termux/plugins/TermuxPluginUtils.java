@@ -18,7 +18,6 @@ import com.termux.shared.shell.command.result.ResultData;
 import com.termux.shared.errors.Errno;
 import com.termux.shared.errors.Error;
 import com.termux.shared.notification.NotificationUtils;
-import com.termux.shared.termux.models.UserAction;
 import com.termux.shared.termux.notification.TermuxNotificationUtils;
 import com.termux.shared.termux.settings.preferences.TermuxPreferenceConstants;
 import com.termux.shared.shell.command.result.ResultSender;
