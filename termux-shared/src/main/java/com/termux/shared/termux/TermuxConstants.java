@@ -85,10 +85,6 @@ public final class TermuxConstants {
     public static final String TERMUX_GIT_REPO_NAME = "termux-app"; // Default: "termux-app"
     /** Termux Git repo url */
     public static final String TERMUX_GIT_REPO_URL = TERMUX_GIT_ORGANIZATION_URL + "/" + TERMUX_GIT_REPO_NAME; // Default: "https://github.com/termux/termux-app"
-    /** Termux Git issues repo url */
-    public static final String TERMUX_GIT_ISSUES_REPO_URL = TERMUX_GIT_REPO_URL + "/issues"; // Default: "https://github.com/termux/termux-app/issues"
-    /** Termux F-Droid package url */
-    public static final String TERMUX_FDROID_PACKAGE_URL = FDROID_PACKAGES_BASE_URL + "/" + TERMUX_PACKAGE_NAME; // Default: "https://f-droid.org/en/packages/com.termux"
 
 
     /** Termux:API app name */
@@ -97,12 +93,6 @@ public final class TermuxConstants {
     public static final String TERMUX_API_PACKAGE_NAME = TERMUX_PACKAGE_NAME + ".api"; // Default: "com.termux.api"
     /** Termux:API Git repo name */
     public static final String TERMUX_API_GIT_REPO_NAME = "termux-api"; // Default: "termux-api"
-    /** Termux:API Git repo url */
-    public static final String TERMUX_API_GIT_REPO_URL = TERMUX_GIT_ORGANIZATION_URL + "/" + TERMUX_API_GIT_REPO_NAME; // Default: "https://github.com/termux/termux-api"
-    /** Termux:API Git issues repo url */
-    public static final String TERMUX_API_GIT_ISSUES_REPO_URL = TERMUX_API_GIT_REPO_URL + "/issues"; // Default: "https://github.com/termux/termux-api/issues"
-    /** Termux:API F-Droid package url */
-    public static final String TERMUX_API_FDROID_PACKAGE_URL = FDROID_PACKAGES_BASE_URL + "/" + TERMUX_API_PACKAGE_NAME; // Default: "https://f-droid.org/en/packages/com.termux.api"
 
 
     /** Termux:Boot app name */
@@ -111,12 +101,6 @@ public final class TermuxConstants {
     public static final String TERMUX_BOOT_PACKAGE_NAME = TERMUX_PACKAGE_NAME + ".boot"; // Default: "com.termux.boot"
     /** Termux:Boot Git repo name */
     public static final String TERMUX_BOOT_GIT_REPO_NAME = "termux-boot"; // Default: "termux-boot"
-    /** Termux:Boot Git repo url */
-    public static final String TERMUX_BOOT_GIT_REPO_URL = TERMUX_GIT_ORGANIZATION_URL + "/" + TERMUX_BOOT_GIT_REPO_NAME; // Default: "https://github.com/termux/termux-boot"
-    /** Termux:Boot Git issues repo url */
-    public static final String TERMUX_BOOT_GIT_ISSUES_REPO_URL = TERMUX_BOOT_GIT_REPO_URL + "/issues"; // Default: "https://github.com/termux/termux-boot/issues"
-    /** Termux:Boot F-Droid package url */
-    public static final String TERMUX_BOOT_FDROID_PACKAGE_URL = FDROID_PACKAGES_BASE_URL + "/" + TERMUX_BOOT_PACKAGE_NAME; // Default: "https://f-droid.org/en/packages/com.termux.boot"
 
 
     /** Termux:Float app name */
@@ -125,12 +109,6 @@ public final class TermuxConstants {
     public static final String TERMUX_FLOAT_PACKAGE_NAME = TERMUX_PACKAGE_NAME + ".window"; // Default: "com.termux.window"
     /** Termux:Float Git repo name */
     public static final String TERMUX_FLOAT_GIT_REPO_NAME = "termux-float"; // Default: "termux-float"
-    /** Termux:Float Git repo url */
-    public static final String TERMUX_FLOAT_GIT_REPO_URL = TERMUX_GIT_ORGANIZATION_URL + "/" + TERMUX_FLOAT_GIT_REPO_NAME; // Default: "https://github.com/termux/termux-float"
-    /** Termux:Float Git issues repo url */
-    public static final String TERMUX_FLOAT_GIT_ISSUES_REPO_URL = TERMUX_FLOAT_GIT_REPO_URL + "/issues"; // Default: "https://github.com/termux/termux-float/issues"
-    /** Termux:Float F-Droid package url */
-    public static final String TERMUX_FLOAT_FDROID_PACKAGE_URL = FDROID_PACKAGES_BASE_URL + "/" + TERMUX_FLOAT_PACKAGE_NAME; // Default: "https://f-droid.org/en/packages/com.termux.window"
 
 
     /** Termux:Styling app name */
@@ -139,12 +117,6 @@ public final class TermuxConstants {
     public static final String TERMUX_STYLING_PACKAGE_NAME = TERMUX_PACKAGE_NAME + ".styling"; // Default: "com.termux.styling"
     /** Termux:Styling Git repo name */
     public static final String TERMUX_STYLING_GIT_REPO_NAME = "termux-styling"; // Default: "termux-styling"
-    /** Termux:Styling Git repo url */
-    public static final String TERMUX_STYLING_GIT_REPO_URL = TERMUX_GIT_ORGANIZATION_URL + "/" + TERMUX_STYLING_GIT_REPO_NAME; // Default: "https://github.com/termux/termux-styling"
-    /** Termux:Styling Git issues repo url */
-    public static final String TERMUX_STYLING_GIT_ISSUES_REPO_URL = TERMUX_STYLING_GIT_REPO_URL + "/issues"; // Default: "https://github.com/termux/termux-styling/issues"
-    /** Termux:Styling F-Droid package url */
-    public static final String TERMUX_STYLING_FDROID_PACKAGE_URL = FDROID_PACKAGES_BASE_URL + "/" + TERMUX_STYLING_PACKAGE_NAME; // Default: "https://f-droid.org/en/packages/com.termux.styling"
 
 
     /** Termux:Tasker app name */
@@ -153,12 +125,6 @@ public final class TermuxConstants {
     public static final String TERMUX_TASKER_PACKAGE_NAME = TERMUX_PACKAGE_NAME + ".tasker"; // Default: "com.termux.tasker"
     /** Termux:Tasker Git repo name */
     public static final String TERMUX_TASKER_GIT_REPO_NAME = "termux-tasker"; // Default: "termux-tasker"
-    /** Termux:Tasker Git repo url */
-    public static final String TERMUX_TASKER_GIT_REPO_URL = TERMUX_GIT_ORGANIZATION_URL + "/" + TERMUX_TASKER_GIT_REPO_NAME; // Default: "https://github.com/termux/termux-tasker"
-    /** Termux:Tasker Git issues repo url */
-    public static final String TERMUX_TASKER_GIT_ISSUES_REPO_URL = TERMUX_TASKER_GIT_REPO_URL + "/issues"; // Default: "https://github.com/termux/termux-tasker/issues"
-    /** Termux:Tasker F-Droid package url */
-    public static final String TERMUX_TASKER_FDROID_PACKAGE_URL = FDROID_PACKAGES_BASE_URL + "/" + TERMUX_TASKER_PACKAGE_NAME; // Default: "https://f-droid.org/en/packages/com.termux.tasker"
 
 
     /** Termux:Widget app name */
@@ -167,12 +133,6 @@ public final class TermuxConstants {
     public static final String TERMUX_WIDGET_PACKAGE_NAME = TERMUX_PACKAGE_NAME + ".widget"; // Default: "com.termux.widget"
     /** Termux:Widget Git repo name */
     public static final String TERMUX_WIDGET_GIT_REPO_NAME = "termux-widget"; // Default: "termux-widget"
-    /** Termux:Widget Git repo url */
-    public static final String TERMUX_WIDGET_GIT_REPO_URL = TERMUX_GIT_ORGANIZATION_URL + "/" + TERMUX_WIDGET_GIT_REPO_NAME; // Default: "https://github.com/termux/termux-widget"
-    /** Termux:Widget Git issues repo url */
-    public static final String TERMUX_WIDGET_GIT_ISSUES_REPO_URL = TERMUX_WIDGET_GIT_REPO_URL + "/issues"; // Default: "https://github.com/termux/termux-widget/issues"
-    /** Termux:Widget F-Droid package url */
-    public static final String TERMUX_WIDGET_FDROID_PACKAGE_URL = FDROID_PACKAGES_BASE_URL + "/" + TERMUX_WIDGET_PACKAGE_NAME; // Default: "https://f-droid.org/en/packages/com.termux.widget"
 
 
 
@@ -222,20 +182,12 @@ public final class TermuxConstants {
 
     /** Termux Packages Git repo name */
     public static final String TERMUX_PACKAGES_GIT_REPO_NAME = "termux-packages"; // Default: "termux-packages"
-    /** Termux Packages Git repo url */
-    public static final String TERMUX_PACKAGES_GIT_REPO_URL = TERMUX_GIT_ORGANIZATION_URL + "/" + TERMUX_PACKAGES_GIT_REPO_NAME; // Default: "https://github.com/termux/termux-packages"
-    /** Termux Packages Git issues repo url */
-    public static final String TERMUX_PACKAGES_GIT_ISSUES_REPO_URL = TERMUX_PACKAGES_GIT_REPO_URL + "/issues"; // Default: "https://github.com/termux/termux-packages/issues"
 
 
     /** Termux API apt package name */
     public static final String TERMUX_API_APT_PACKAGE_NAME = "termux-api"; // Default: "termux-api"
     /** Termux API apt Git repo name */
     public static final String TERMUX_API_APT_GIT_REPO_NAME = "termux-api-package"; // Default: "termux-api-package"
-    /** Termux API apt Git repo url */
-    public static final String TERMUX_API_APT_GIT_REPO_URL = TERMUX_GIT_ORGANIZATION_URL + "/" + TERMUX_API_APT_GIT_REPO_NAME; // Default: "https://github.com/termux/termux-api-package"
-    /** Termux API apt Git issues repo url */
-    public static final String TERMUX_API_APT_GIT_ISSUES_REPO_URL = TERMUX_API_APT_GIT_REPO_URL + "/issues"; // Default: "https://github.com/termux/termux-api-package/issues"
 
 
 
@@ -796,8 +748,6 @@ public final class TermuxConstants {
          */
         public static final class RUN_COMMAND_SERVICE {
 
-            /** Termux RUN_COMMAND Intent help url */
-            public static final String RUN_COMMAND_API_HELP_URL = TERMUX_GIT_REPO_URL + "/wiki/RUN_COMMAND-Intent"; // Default: "https://github.com/termux/termux-app/wiki/RUN_COMMAND-Intent"
 
 
             /** Intent action to execute command with RUN_COMMAND_SERVICE */

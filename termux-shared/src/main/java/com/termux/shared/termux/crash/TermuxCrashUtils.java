@@ -330,7 +330,7 @@ public class TermuxCrashUtils implements CrashHandler.CrashHandlerClient {
 
         ReportInfo reportInfo = new ReportInfo(userActionName, logTag, title.toString());
         reportInfo.setReportString(reportString.toString());
-        reportInfo.setReportStringSuffix("\n\n" + TermuxUtils.getReportIssueMarkdownString(currentPackageContext));
+        reportInfo.setReportStringSuffix("");
         reportInfo.setAddReportInfoHeaderToMarkdown(true);
         reportInfo.setReportSaveFileLabelAndPath(userActionName,
             Environment.getExternalStorageDirectory() + "/" +

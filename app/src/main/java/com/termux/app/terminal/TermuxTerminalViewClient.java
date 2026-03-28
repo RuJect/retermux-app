@@ -779,7 +779,7 @@ public class TermuxTerminalViewClient extends TermuxTerminalViewClientBase {
                 ReportInfo reportInfo = new ReportInfo(userActionName,
                     TermuxConstants.TERMUX_APP.TERMUX_ACTIVITY_NAME, title);
                 reportInfo.setReportString(reportString.toString());
-                reportInfo.setReportStringSuffix("\n\n" + TermuxUtils.getReportIssueMarkdownString(mActivity));
+                reportInfo.setReportStringSuffix("");
                 reportInfo.setReportSaveFileLabelAndPath(userActionName,
                     Environment.getExternalStorageDirectory() + "/" +
                         FileUtils.sanitizeFileName(TermuxConstants.TERMUX_APP_NAME + "-" + userActionName + ".log", true, true));

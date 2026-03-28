@@ -740,7 +740,7 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
             // However, crash reporting shows that it sometimes does, so catch it here.
             new AlertDialog.Builder(this).setMessage(getString(R.string.error_styling_not_installed))
                 .setPositiveButton(R.string.action_styling_install,
-                    (dialog, which) -> ActivityUtils.startActivity(this, new Intent(Intent.ACTION_VIEW, Uri.parse(TermuxConstants.TERMUX_STYLING_FDROID_PACKAGE_URL))))
+                    (dialog, which) -> ActivityUtils.startActivity(this, new Intent(Intent.ACTION_VIEW, Uri.parse("https://f-droid.org/en/packages/com.termux.api"))))
                 .setNegativeButton(android.R.string.cancel, null).show();
         }
     }
