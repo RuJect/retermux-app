@@ -171,22 +171,10 @@ public final class TermuxConstants {
 
 
 
-
-
-    /*
-     * Termux packages urls.
-     */
-
-    /** Termux Packages Git repo name */
-    public static final String TERMUX_PACKAGES_GIT_REPO_NAME = "termux-packages"; // Default: "termux-packages"
-
-
     /** Termux API apt package name */
     public static final String TERMUX_API_APT_PACKAGE_NAME = "termux-api"; // Default: "termux-api"
     /** Termux API apt Git repo name */
     public static final String TERMUX_API_APT_GIT_REPO_NAME = "termux-api-package"; // Default: "termux-api-package"
-
-
 
 
 
