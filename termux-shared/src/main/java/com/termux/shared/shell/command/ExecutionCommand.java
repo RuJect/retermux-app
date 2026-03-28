@@ -210,12 +210,6 @@ public class ExecutionCommand {
     public String commandHelp;
 
 
-    /** Defines the markdown text for the help of the Termux plugin API that was used to start the
-     * {@link ExecutionCommand}. This can be used to provide useful info to the user if an internal
-     * error is raised. */
-    public String pluginAPIHelp;
-
-
     /** Defines the {@link Intent} received which started the command. */
     public Intent commandIntent;
 
@@ -453,7 +447,6 @@ public class ExecutionCommand {
 
         logString.append("\n").append(executionCommand.getCommandDescriptionLogString());
         logString.append("\n").append(executionCommand.getCommandHelpLogString());
-        logString.append("\n").append(executionCommand.getPluginAPIHelpLogString());
 
         return logString.toString();
     }
@@ -509,11 +502,6 @@ public class ExecutionCommand {
                 markdownString.append("\n\n### Command Description\n\n").append(executionCommand.commandDescription).append("\n");
             if (executionCommand.commandHelp != null)
                 markdownString.append("\n\n### Command Help\n\n").append(executionCommand.commandHelp).append("\n");
-            markdownString.append("\n##\n");
-        }
-
-        if (executionCommand.pluginAPIHelp != null) {
-            markdownString.append("\n\n### Plugin API Help\n\n").append(executionCommand.pluginAPIHelp);
             markdownString.append("\n##\n");
         }
 
@@ -604,10 +592,6 @@ public class ExecutionCommand {
 
     public String getCommandHelpLogString() {
         return Logger.getSingleLineLogStringEntry("Command Help", commandHelp, "-");
-    }
-
-    public String getPluginAPIHelpLogString() {
-        return Logger.getSingleLineLogStringEntry("Plugin API Help", pluginAPIHelp, "-");
     }
 
     public String getCommandIntentLogString() {
