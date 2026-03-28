@@ -106,7 +106,7 @@
         about them over email,
         on GitHub or other official termux community forums **will likely be automatically
         closed/deleted** and may
-        even result in **temporary or permanent** ban. Check %1$s/wiki/Hacking for details.</string>
+        even result in **temporary or permanent** ban.</string>
 
     <string name="msg_termux_app_required_by_app">The &TERMUX_APP_NAME; is required by the %1$s app
         to run termux commands.</string>

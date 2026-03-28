@@ -511,32 +511,6 @@ public final class TermuxConstants {
 
 
     /*
-     * Termux miscellaneous urls.
-     */
-
-    /** Termux Site */
-    public static final String TERMUX_SITE = TERMUX_APP_NAME + " Site"; // Default: "Termux Site"
-
-    /** Termux Site url */
-    public static final String TERMUX_SITE_URL = "https://termux.dev"; // Default: "https://termux.dev"
-
-    /** Termux Wiki */
-    public static final String TERMUX_WIKI = TERMUX_APP_NAME + " Wiki"; // Default: "Termux Wiki"
-
-    /** Termux Wiki url */
-    public static final String TERMUX_WIKI_URL = "https://wiki.termux.com"; // Default: "https://wiki.termux.com"
-
-    /** Termux GitHub wiki repo url */
-    public static final String TERMUX_GITHUB_WIKI_REPO_URL = TERMUX_GITHUB_REPO_URL + "/wiki"; // Default: "https://github.com/termux/termux-app/wiki"
-
-    /** Termux Packages wiki repo url */
-    public static final String TERMUX_PACKAGES_GITHUB_WIKI_REPO_URL = TERMUX_PACKAGES_GITHUB_REPO_URL + "/wiki"; // Default: "https://github.com/termux/termux-packages/wiki"
-
-
-
-
-
-    /*
      * Termux app core directory paths.
      */
 
@@ -1092,7 +1066,7 @@ public final class TermuxConstants {
         public static final class RUN_COMMAND_SERVICE {
 
             /** Termux RUN_COMMAND Intent help url */
-            public static final String RUN_COMMAND_API_HELP_URL = TERMUX_GITHUB_WIKI_REPO_URL + "/RUN_COMMAND-Intent"; // Default: "https://github.com/termux/termux-app/wiki/RUN_COMMAND-Intent"
+            public static final String RUN_COMMAND_API_HELP_URL = TERMUX_GITHUB_REPO_URL + "/wiki/RUN_COMMAND-Intent"; // Default: "https://github.com/termux/termux-app/wiki/RUN_COMMAND-Intent"
 
 
             /** Intent action to execute command with RUN_COMMAND_SERVICE */
