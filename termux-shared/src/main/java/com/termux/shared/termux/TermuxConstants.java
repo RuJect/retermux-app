@@ -78,58 +78,44 @@ public final class TermuxConstants {
     public static final String TERMUX_APP_NAME = "reTermux"; // Default: "Termux"
     /** Termux package name */
     public static final String TERMUX_PACKAGE_NAME = "org.ruject.termux"; // Default: "com.termux"
-    /** Termux Git repo name */
-    public static final String TERMUX_GIT_REPO_NAME = "termux-app"; // Default: "termux-app"
     /** Termux Git repo url */
-    public static final String TERMUX_GIT_REPO_URL = TERMUX_GIT_ORGANIZATION_URL + "/" + TERMUX_GIT_REPO_NAME; // Default: "https://github.com/termux/termux-app"
+    public static final String TERMUX_GIT_REPO_URL = TERMUX_GIT_ORGANIZATION_URL + "/" + "termux-app"; // Default: "https://github.com/termux/termux-app"
 
 
     /** Termux:API app name */
     public static final String TERMUX_API_APP_NAME = "Termux:API"; // Default: "Termux:API"
     /** Termux:API app package name */
     public static final String TERMUX_API_PACKAGE_NAME = TERMUX_PACKAGE_NAME + ".api"; // Default: "com.termux.api"
-    /** Termux:API Git repo name */
-    public static final String TERMUX_API_GIT_REPO_NAME = "termux-api"; // Default: "termux-api"
 
 
     /** Termux:Boot app name */
     public static final String TERMUX_BOOT_APP_NAME = "Termux:Boot"; // Default: "Termux:Boot"
     /** Termux:Boot app package name */
     public static final String TERMUX_BOOT_PACKAGE_NAME = TERMUX_PACKAGE_NAME + ".boot"; // Default: "com.termux.boot"
-    /** Termux:Boot Git repo name */
-    public static final String TERMUX_BOOT_GIT_REPO_NAME = "termux-boot"; // Default: "termux-boot"
 
 
     /** Termux:Float app name */
     public static final String TERMUX_FLOAT_APP_NAME = "Termux:Float"; // Default: "Termux:Float"
     /** Termux:Float app package name */
     public static final String TERMUX_FLOAT_PACKAGE_NAME = TERMUX_PACKAGE_NAME + ".window"; // Default: "com.termux.window"
-    /** Termux:Float Git repo name */
-    public static final String TERMUX_FLOAT_GIT_REPO_NAME = "termux-float"; // Default: "termux-float"
 
 
     /** Termux:Styling app name */
     public static final String TERMUX_STYLING_APP_NAME = "Termux:Styling"; // Default: "Termux:Styling"
     /** Termux:Styling app package name */
     public static final String TERMUX_STYLING_PACKAGE_NAME = TERMUX_PACKAGE_NAME + ".styling"; // Default: "com.termux.styling"
-    /** Termux:Styling Git repo name */
-    public static final String TERMUX_STYLING_GIT_REPO_NAME = "termux-styling"; // Default: "termux-styling"
 
 
     /** Termux:Tasker app name */
     public static final String TERMUX_TASKER_APP_NAME = "Termux:Tasker"; // Default: "Termux:Tasker"
     /** Termux:Tasker app package name */
     public static final String TERMUX_TASKER_PACKAGE_NAME = TERMUX_PACKAGE_NAME + ".tasker"; // Default: "com.termux.tasker"
-    /** Termux:Tasker Git repo name */
-    public static final String TERMUX_TASKER_GIT_REPO_NAME = "termux-tasker"; // Default: "termux-tasker"
 
 
     /** Termux:Widget app name */
     public static final String TERMUX_WIDGET_APP_NAME = "Termux:Widget"; // Default: "Termux:Widget"
     /** Termux:Widget app package name */
     public static final String TERMUX_WIDGET_PACKAGE_NAME = TERMUX_PACKAGE_NAME + ".widget"; // Default: "com.termux.widget"
-    /** Termux:Widget Git repo name */
-    public static final String TERMUX_WIDGET_GIT_REPO_NAME = "termux-widget"; // Default: "termux-widget"
 
 
 
@@ -173,8 +159,6 @@ public final class TermuxConstants {
 
     /** Termux API apt package name */
     public static final String TERMUX_API_APT_PACKAGE_NAME = "termux-api"; // Default: "termux-api"
-    /** Termux API apt Git repo name */
-    public static final String TERMUX_API_APT_GIT_REPO_NAME = "termux-api-package"; // Default: "termux-api-package"
 
 
 
