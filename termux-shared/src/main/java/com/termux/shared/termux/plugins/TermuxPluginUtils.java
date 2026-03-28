@@ -11,7 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.termux.shared.R;
-import com.termux.shared.activities.ReportActivity;
 import com.termux.shared.file.FileUtils;
 import com.termux.shared.termux.file.TermuxFileUtils;
 import com.termux.shared.shell.command.result.ResultConfig;
@@ -30,7 +29,6 @@ import com.termux.shared.termux.TermuxConstants.TERMUX_APP.TERMUX_SERVICE;
 import com.termux.shared.logger.Logger;
 import com.termux.shared.termux.settings.preferences.TermuxAppSharedPreferences;
 import com.termux.shared.termux.settings.preferences.TermuxPreferenceConstants.TERMUX_APP;
-import com.termux.shared.models.ReportInfo;
 import com.termux.shared.termux.settings.properties.TermuxAppSharedProperties;
 import com.termux.shared.shell.command.ExecutionCommand;
 import com.termux.shared.data.DataUtils;
@@ -343,66 +341,8 @@ public class TermuxPluginUtils {
         if (!preferences.arePluginErrorNotificationsEnabled(true) && !forceNotification)
             return;
 
-        logTag = DataUtils.getDefaultIfNull(logTag, LOG_TAG);
-
         if (showToast)
             Logger.showToast(currentPackageContext, notificationTextString, true);
-
-        // Send a notification to show the error which when clicked will open the ReportActivity
-        // to show the details of the error
-        if (title == null || title.toString().isEmpty())
-            title = TermuxConstants.TERMUX_APP_NAME + " Plugin Execution Command Error";
-
-        Logger.logDebug(logTag, "Sending \"" + title + "\" notification.");
-
-        StringBuilder reportString = new StringBuilder(message);
-
-        if (appInfoMode != null)
-            reportString.append("\n\n").append(TermuxUtils.getAppInfoMarkdownString(currentPackageContext, appInfoMode,
-                callingPackageName != null ? callingPackageName : currentPackageName));
-
-        if (addDeviceInfo)
-            reportString.append("\n\n").append(AndroidUtils.getDeviceInfoMarkdownString(currentPackageContext, true));
-
-        String userActionName = UserAction.PLUGIN_EXECUTION_COMMAND.getName();
-
-        ReportInfo reportInfo = new ReportInfo(userActionName, logTag, title.toString());
-        reportInfo.setReportString(reportString.toString());
-        reportInfo.setReportStringSuffix("");
-        reportInfo.setAddReportInfoHeaderToMarkdown(true);
-        reportInfo.setReportSaveFileLabelAndPath(userActionName,
-            Environment.getExternalStorageDirectory() + "/" +
-                FileUtils.sanitizeFileName(TermuxConstants.TERMUX_APP_NAME + "-" + userActionName + ".log", true, true));
-
-        ReportActivity.NewInstanceResult result = ReportActivity.newInstance(termuxPackageContext, reportInfo);
-        if (result.contentIntent == null) return;
-
-        // Must ensure result code for PendingIntents and id for notification are unique otherwise will override previous
-        int nextNotificationId = TermuxNotificationUtils.getNextNotificationId(termuxPackageContext);
-
-        PendingIntent contentIntent = PendingIntent.getActivity(termuxPackageContext, nextNotificationId, result.contentIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-
-        PendingIntent deleteIntent = null;
-        if (result.deleteIntent != null)
-            deleteIntent = PendingIntent.getBroadcast(termuxPackageContext, nextNotificationId, result.deleteIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-
-        // Setup the notification channel if not already set up
-        setupPluginCommandErrorsNotificationChannel(termuxPackageContext);
-
-        // Use markdown in notification
-        CharSequence notificationTextCharSequence = MarkdownUtils.getSpannedMarkdownText(termuxPackageContext, notificationTextString);
-        //CharSequence notificationTextCharSequence = notificationTextString;
-
-        // Build the notification
-        Notification.Builder builder = getPluginCommandErrorsNotificationBuilder(currentPackageContext, termuxPackageContext,
-            title, notificationTextCharSequence, notificationTextCharSequence, contentIntent, deleteIntent,
-            NotificationUtils.NOTIFICATION_MODE_VIBRATE);
-        if (builder == null) return;
-
-        // Send the notification
-        NotificationManager notificationManager = NotificationUtils.getNotificationManager(termuxPackageContext);
-        if (notificationManager != null)
-            notificationManager.notify(nextNotificationId, builder.build());
     }
 
     /**
