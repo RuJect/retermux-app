@@ -331,7 +331,7 @@ public final class TermuxConstants {
      */
 
     /** Termux GitHub organization name */
-    public static final String TERMUX_GITHUB_ORGANIZATION_NAME = "retermux"; // Default: "termux"
+    public static final String TERMUX_GITHUB_ORGANIZATION_NAME = "RuJect"; // Default: "termux"
     /** Termux GitHub organization url */
     public static final String TERMUX_GITHUB_ORGANIZATION_URL = "https://github.com" + "/" + TERMUX_GITHUB_ORGANIZATION_NAME; // Default: "https://github.com/termux"
 
