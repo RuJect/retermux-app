@@ -551,13 +551,6 @@ public final class TermuxConstants {
     public static final String TERMUX_PACKAGES_GITHUB_WIKI_REPO_URL = TERMUX_PACKAGES_GITHUB_REPO_URL + "/wiki"; // Default: "https://github.com/termux/termux-packages/wiki"
 
 
-    /** Termux support email url */
-    public static final String TERMUX_SUPPORT_EMAIL_URL = "support@termux.dev"; // Default: "support@termux.dev"
-
-    /** Termux support email mailto url */
-    public static final String TERMUX_SUPPORT_EMAIL_MAILTO_URL = "mailto:" + TERMUX_SUPPORT_EMAIL_URL; // Default: "mailto:support@termux.dev"
-
-
     /** Termux Reddit subreddit */
     public static final String TERMUX_REDDIT_SUBREDDIT = "r/termux"; // Default: "r/termux"
 
